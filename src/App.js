@@ -115,7 +115,7 @@ const initialState={
           }).then(response=>response.json())
       .then(response => {
         if (response) {
-          fetch('https://magnificent-face.herokuapp.com:3000/image', {
+          fetch('https://magnificent-face.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
